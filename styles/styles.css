@@ -1,10 +1,12 @@
-* {
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-body {
-  background-color: rgb(115, 115, 115);
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  
 }
 
 nav {
@@ -37,15 +39,17 @@ nav {
 .divaboutme {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 40%;
 }
 
 .divtext {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: 60%;
+  padding: 0px 50px;
 }
 
 .sectiontwo {
@@ -71,6 +75,9 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+a:hover {
+  color: rgb(104, 0, 169);
 }
 
 h1 {
@@ -123,3 +130,84 @@ footer img {
   gap: 30px;
   padding-bottom: 25px;
 }
+
+/* #foto-gabi::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  z-index: -1;
+  -webkit-animation-name: gradient-shadow;
+  animation-name: gradient-shadow;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@-webkit-keyframes gradient-shadow {
+  0% {
+    -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+    box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 17px 3px rgb(104, 0, 169),
+      0 0 4px 2px rgb(104, 0, 169);
+    box-shadow: 0 0 17px 3px rgb(104, 0, 169), 0 0 4px 2px rgb(104, 0, 169);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 17px 3px rgb(9, 0, 137), 0 0 4px 2px rgb(9, 0, 137);
+    box-shadow: 0 0 17px 3px rgb(9, 0, 137), 0 0 4px 2px rgb(9, 0, 137);
+  }
+  60% {
+    -webkit-box-shadow: 0 0 17px 3px #ff0191, 0 0 4px 2px #ff0191;
+    box-shadow: 0 0 17px 3px #ff0191, 0 0 4px 2px #ff0191;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+    box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+    box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  }
+}
+
+@keyframes gradient-shadow {
+  0% {
+    -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+    box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 17px 3px rgb(104, 0, 169),
+      0 0 4px 2px rgb(104, 0, 169);
+    box-shadow: 0 0 17px 3px rgb(104, 0, 169), 0 0 4px 2px rgb(104, 0, 169);
+  }
+  40% {
+    -webkit-box-shadow: 0 0 17px 3px rgb(9, 0, 137), 0 0 4px 2px rgb(9, 0, 137);
+    box-shadow: 0 0 17px 3px rgb(9, 0, 137), 0 0 4px 2px rgb(9, 0, 137);
+  }
+  60% {
+    -webkit-box-shadow: 0 0 17px 3px #ff0191, 0 0 4px 2px #ff0191;
+    box-shadow: 0 0 17px 3px #ff0191, 0 0 4px 2px #ff0191;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+    box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+    box-shadow: 0 0 17px 3px #c586c0, 0 0 4px 2px #c586c0;
+  }
+} */
