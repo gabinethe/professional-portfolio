@@ -9,13 +9,16 @@
 
 body {
   background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgb(0, 0, 0) 20%, rgba(66,0,96,1) 70%, rgba(108,0,157,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(0, 0, 0) 20%,
+    rgba(66, 0, 96, 1) 70%,
+    rgba(108, 0, 157, 1) 100%
+  );
   background-attachment: fixed;
-  
 }
 
 /* NAVEGAÇÃO / HEADER */
-
 
 nav {
   display: flex;
@@ -25,7 +28,6 @@ nav {
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 20px;
-  
 }
 
 ul {
@@ -39,33 +41,29 @@ ul {
 a {
   text-decoration: none;
   color: white;
+  font-weight: bolder;
+  padding: 10px;
 }
 
 #nav-one:hover {
-  padding: 10px 10px; 
   background: #b972c6;
   color: #ffffff;
   box-shadow: 0 0 10px #b972c6, 0 0 40px #9d44a1, 0 0 70px #56005e;
-  font-weight: bolder;
-  border-radius: 10px;
+  border-radius: 13px;
 }
 
 #nav-two:hover {
-  padding: 10px 10px; 
   background: #b972c6;
   color: #ffffff;
   box-shadow: 0 0 10px #b972c6, 0 0 40px #9d44a1, 0 0 70px #56005e;
-  font-weight: bolder;
-  border-radius: 10px;
+  border-radius: 13px;
 }
 
 #nav-three:hover {
-  padding: 10px 10px; 
   background: #b972c6;
   color: #ffffff;
   box-shadow: 0 0 10px #b972c6, 0 0 40px #9d44a1, 0 0 70px #56005e;
-  font-weight: bolder;
-  border-radius: 10px;
+  border-radius: 13px;
 }
 
 /* MAIN CONTAINER */
@@ -77,7 +75,6 @@ a {
   flex-direction: column;
 }
 
-
 /* SECTION PRINCIPAL */
 
 section {
@@ -86,24 +83,22 @@ section {
   align-items: center;
   height: 100vh;
   color: aliceblue;
-
 }
 
-section h1{
+section h1 {
   display: flex;
   justify-content: center;
   margin: 30px;
 }
 
-#section-one{
+#section-one {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 10px;
-
 }
 
-#foto-gabi{
+#foto-gabi {
   /* minha foto */
   width: 300px;
   height: 300px;
@@ -111,43 +106,45 @@ section h1{
   display: inline-block;
   padding: 15px 20px;
   margin: 40px 0;
-  color:#0aa8e6;
-  font-family:'open_sansbold';
+  color: #0aa8e6;
+  font-family: "open_sansbold";
   transition: 0.4s;
   letter-spacing: 4px;
   overflow: hidden;
   margin-right: 50px;
-  border: 2px solid #b100c2;
-  border-radius:50px;
+  border: 3px solid #b972c6;
+  border-radius: 50px;
 }
 
-#foto-gabi:hover{
+#foto-gabi:hover {
   background: #b972c6;
   color: #000;
-  box-shadow: 0 0 10px #b972c6, 0 0 40px #9d44a1, 0 0 70px #56005e;
+  box-shadow: 0 0 10px #b972c6, 0 0 40px #9d44a1, 0 0 70px #d200e6;
 }
 
-#foto-gabi:active{
-   color:#56005e; 
-   background: #000000;
+#foto-gabi:active {
+  color: #d200e6;
+  background: #000000;
 }
 
 .div-section-one {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   flex-direction: column;
   padding-bottom: 200px;
   padding-left: 200px;
   padding-right: 200px;
   padding-top: 50px;
- 
 }
 
-#intro{
+#intro {
   display: flex;
   flex-direction: row;
 }
 
-#separação{
+#separação {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,34 +155,48 @@ section h1{
 
 /* SEGUNDA SECTION */
 
-#section-two{
+#section-two {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
 }
 
-article{
+.div-section-two {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  
 }
 
-#xaxa{
+#xaxa {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
-
+  padding-left: 80px;
 }
 
-#bank{
-  width: 50%;
+#project-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
-#clima{
+#project-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+}
+
+#bank {
+  width: 75%;
+}
+
+#clima {
   width: 50%;
 }
 
@@ -195,36 +206,21 @@ div h2 {
   justify-content: center;
 }
 
-
-
-.div-section-two{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-
-
-
 /* TERCEIRA SECTION*/
 
-#section-three{
+#section-three {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin: 100px;
-
 }
 
-.skills{
+.skills {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 3%;
   height: 3%;
-
 }
 
 /* FOOTER */
@@ -286,20 +282,14 @@ footer img {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
-
   display: grid;
   place-items: center;
-
   outline: none;
   border-radius: 100%;
-
   opacity: 0;
-
   cursor: pointer;
-
   pointer-events: none;
   transition: opacity 0.5s ease;
-
   z-index: 10;
 }
 
